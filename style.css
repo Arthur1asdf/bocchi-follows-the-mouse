@@ -25,7 +25,7 @@ body {
   /* creates a box behind the box we created first number
   is left or right second is up or down and third number
   is how blurry you want it to be */
-  filter: drop-shadow(0 20px 40px #666);
+  filter: drop-shadow(0 20px 40px gray);
   display: grid;
   align-items: center;
   justify-items: center;
@@ -39,4 +39,17 @@ body {
   height: 50px;
   border-radius: 50%;
   background-color: white;
+
+}
+.pupil
+{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background-color: black;
+  border-radius: 50%;
+  /* you can also do top: calc(50% - 8px) and tune the 
+  8px until you like what you see */
+  top: 30%;
+
 }
