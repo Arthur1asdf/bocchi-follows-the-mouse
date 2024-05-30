@@ -1,0 +1,42 @@
+body {
+  background-color: yellow;
+  /* we do margin and padding 0 because we don't want anything
+  interfering with my square head guy
+  honestly this is prob optional */
+
+  margin: 0;
+  padding: 0;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
+  /* we are seperating everything into grids
+  we then  use align items to center it vertically and 
+  justify items to center it horizontally
+  NOTE: this is just for grid display ai and ji will
+  interact diff based on the type of display */
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.eyesContainer {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  /* creates a box behind the box we created first number
+  is left or right second is up or down and third number
+  is how blurry you want it to be */
+  filter: drop-shadow(0 20px 40px #666);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  /* creates two equal columns if I want three equal columns
+  I would add another 1fr  */
+  grid-template-columns: 1fr 1fr;
+
+}
+.eye{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
