@@ -19,24 +19,28 @@ body {
   justify-items: center;
 }
 .eyesContainer {
-  width: 200px;
-  height: 200px;
-  background-color: tomato;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-image: url("/images/bocchi-on-the-rocks-v0-5pgzqswie05a1.png");
+  background-size: cover; /* Cover the entire area of the element */
+  background-position: center;
   /* creates a box behind the box we created first number
   is left or right second is up or down and third number
   is how blurry you want it to be */
   filter: drop-shadow(0 20px 40px gray);
-  display: grid;
-  align-items: center;
-  justify-items: center;
+  /* display: grid; */
+  /* align-items: center;
+  justify-items: center; */
   /* creates two equal columns if I want three equal columns
   I would add another 1fr  */
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   transform-style: preserve-3d;
   transform: perspective(500px) rotateX(var(--yAngle, 0deg))
     rotateY(var(--xAngle, 0deg));
 }
 .eye {
+  position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -57,4 +61,12 @@ body {
   8px until you like what you see */
   top: 30%;
   left: 2px;
+}
+#leftEye {
+  top: 55%;
+  left: 53%;
+}
+#rightEye {
+  top: 49%;
+  left: 17%;
 }
